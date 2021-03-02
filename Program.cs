@@ -15,7 +15,15 @@ namespace GuessingGame
 
             Console.Write("Guess a number: ");
             string response = Console.ReadLine();
-            Console.WriteLine($"You guessed {response}!");
+            Console.WriteLine($"");
+            int SecretNumber = 42;
+            if ( int.Parse(response) == SecretNumber) {
+                Console.WriteLine("That's Correct!!!");
+            } 
+            else
+            {
+                Console.WriteLine("Not the one. Try again later");
+            }
         }
     }
 }
